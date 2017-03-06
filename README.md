@@ -67,7 +67,7 @@ circleLetterView.setAnimationType(SquareLetterView.NONE_ANIMATION);
 
 Change default indicator
 
-![m2](/images/m2.gif)
+![m2](/images/m3.gif)
 
 Change color
 

@@ -10,6 +10,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
+import org.nghiatrx.libs.letterview.CircleLetterView;
 import org.nghiatrx.libs.letterview.SquareLetterView;
 
 public class MainActivity extends AppCompatActivity {
@@ -60,36 +61,23 @@ public class MainActivity extends AppCompatActivity {
         public class ViewHolder extends RecyclerView.ViewHolder {
 
             private TextView textView;
-            private SquareLetterView squareLetterView;
+            private CircleLetterView circleLetterView;
 
             public ViewHolder(View view) {
                 super(view);
                 textView = (TextView) view.findViewById(R.id.text);
-//                circleLetterView = (CircleLetterView) view.findViewById(R.id.circleLetterView);
-//                circleLetterView.setOnClickListener(new View.OnClickListener() {
-//                    @Override
-//                    public void onClick(View v) {
-//                        circleLetterView.runSelectedAnimation();
-//                    }
-//                });
-//
-//                view.setOnClickListener(new View.OnClickListener() {
-//                    @Override
-//                    public void onClick(View v) {
-//                        circleLetterView.runSelectedAnimation();
-//                    }
-//                });
-
-                squareLetterView = (SquareLetterView) view.findViewById(R.id.circleLetterView);
-
-                squareLetterView.setAnimationType(SquareLetterView.ROTATE_ANIMATION);
-
-//                squareLetterView.setSelectedIndicatorBitmap(BitmapFactory.decodeResource(getResources(), R.drawable.ic_call_black_24dp));
+                circleLetterView = (CircleLetterView) view.findViewById(R.id.circleLetterView);
+                circleLetterView.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        circleLetterView.runSelectedAnimation();
+                    }
+                });
 
                 view.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
-                        squareLetterView.runSelectedAnimation();
+                        circleLetterView.runSelectedAnimation();
                     }
                 });
 
@@ -97,7 +85,7 @@ public class MainActivity extends AppCompatActivity {
 
             public void bindData(String s) {
                 textView.setText(s);
-                squareLetterView.setLetter(s.charAt(0));
+                circleLetterView.setLetter(s.charAt(0));
             }
         }
 
