@@ -38,7 +38,7 @@ Insert below code into your layout file:
 To run animation:
 
 ```
-ircleLetterView circleLetterView = (CircleLetterView) view.findViewById(R.id.circleLetterView);
+CircleLetterView circleLetterView = (CircleLetterView) view.findViewById(R.id.circleLetterView);
 circleLetterView.setOnClickListener(new View.OnClickListener() {
      @Override
      public void onClick(View v) {
