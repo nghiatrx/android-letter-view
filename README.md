@@ -34,6 +34,10 @@ Insert below code into your layout file:
         android:layout_height="wrap_content"
         android:id="@+id/circleLetterView"/>
 ````
+Set letter:
+```
+circleLetterView.setLetter('A');
+```
 
 To run animation:
 
