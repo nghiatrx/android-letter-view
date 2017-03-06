@@ -56,7 +56,7 @@ circleLetterView.setAnimationType(SquareLetterView.ROTATE_ANIMATION); // default
 ![m1](/images/m1.gif)
 
 ```
-circleLetterView.setAnimationType(SquareLetterView.NONE_ANIMATION); // default
+circleLetterView.setAnimationType(SquareLetterView.NONE_ANIMATION);
 ```
 
 ![m2](/images/m2.gif)
