@@ -290,6 +290,12 @@ public abstract class BaseLetterVIew extends View {
     @Override
     protected void onDraw(Canvas canvas) {
         super.onDraw(canvas);
+        if (mPaintSelected == null) {
+            mPaintSelected = new Paint(Paint.ANTI_ALIAS_FLAG);
+        }
+        if (mPaint == null) {
+            mPaint = new Paint(Paint.ANTI_ALIAS_FLAG);
+        }
         draw(canvas, mIsSelected);
         if (mIsSelected) {
             if (mAnimationType == NONE_ANIMATION) canvas.drawBitmap(mSelectedIndicatorBitmap, xBitmap, yBitmap, null);
