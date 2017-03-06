@@ -1,1 +1,1 @@
-include ':app', ':letterview2'
+include ':sample', ':library'
