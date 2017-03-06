@@ -2,6 +2,22 @@
 
 ## 1. Installation
 
+GRADLE
+```
+compile 'com.github.nghiatrx:letter-view:0.0.1'
+```
+
+MAVEN
+```
+<dependency>
+    <groupId>com.github.nghiatrx</groupId>
+    <artifactId>letter-view</artifactId>
+    <version>0.0.1</version>
+</dependency>
+```
+
+view more: https://search.maven.org/#artifactdetails%7Ccom.github.nghiatrx%7Cletter-view%7C0.0.1%7Caar
+
 ## 2. Demo
 
 ![m1](/images/m1.gif)
