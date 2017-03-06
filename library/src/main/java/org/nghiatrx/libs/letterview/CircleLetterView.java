@@ -56,8 +56,14 @@ public class CircleLetterView extends BaseLetterVIew {
     @Override
     protected void draw(Canvas canvas, boolean selected) {
         if (selected) {
+            if (mPaintSelected == null) {
+                mPaintSelected = new Paint(Paint.ANTI_ALIAS_FLAG);
+            }
             canvas.drawCircle(xCircle, yCircle, mRadius, mPaintSelected);
         } else {
+            if (mPaint == null) {
+                mPaint = new Paint(Paint.ANTI_ALIAS_FLAG);
+            }
             canvas.drawCircle(xCircle, yCircle, mRadius, mPaint);
         }
     }
