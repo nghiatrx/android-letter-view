@@ -2,6 +2,22 @@
 
 ## 1. Installation
 
+GRADLE
+```
+compile 'com.github.nghiatrx:letter-view:0.0.1'
+```
+
+MAVEN
+```
+<dependency>
+    <groupId>com.github.nghiatrx</groupId>
+    <artifactId>letter-view</artifactId>
+    <version>0.0.1</version>
+</dependency>
+```
+
+view more: https://search.maven.org/#artifactdetails%7Ccom.github.nghiatrx%7Cletter-view%7C0.0.1%7Caar
+
 ## 2. Demo
 
 ![m1](/images/m1.gif)
@@ -18,11 +34,15 @@ Insert below code into your layout file:
         android:layout_height="wrap_content"
         android:id="@+id/circleLetterView"/>
 ````
+Set letter:
+```
+circleLetterView.setLetter('A');
+```
 
 To run animation:
 
 ```
-ircleLetterView circleLetterView = (CircleLetterView) view.findViewById(R.id.circleLetterView);
+CircleLetterView circleLetterView = (CircleLetterView) view.findViewById(R.id.circleLetterView);
 circleLetterView.setOnClickListener(new View.OnClickListener() {
      @Override
      public void onClick(View v) {
@@ -40,7 +60,7 @@ circleLetterView.setAnimationType(SquareLetterView.ROTATE_ANIMATION); // default
 ![m1](/images/m1.gif)
 
 ```
-circleLetterView.setAnimationType(SquareLetterView.NONE_ANIMATION); // default
+circleLetterView.setAnimationType(SquareLetterView.NONE_ANIMATION);
 ```
 
 ![m2](/images/m2.gif)
