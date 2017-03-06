@@ -4,7 +4,7 @@
 
 GRADLE
 ```
-compile 'com.github.nghiatrx:letter-view:0.0.1'
+compile 'com.github.nghiatrx:letter-view:0.0.4'
 ```
 
 MAVEN
@@ -12,7 +12,7 @@ MAVEN
 <dependency>
     <groupId>com.github.nghiatrx</groupId>
     <artifactId>letter-view</artifactId>
-    <version>0.0.1</version>
+    <version>0.0.4</version>
 </dependency>
 ```
 
@@ -67,6 +67,9 @@ circleLetterView.setAnimationType(SquareLetterView.NONE_ANIMATION);
 
 Change default indicator
 
+```
+circleLetterView.setSelectedIndicatorBitmap(BitmapFactory.decodeResource(getResources(), R.drawable.ic_call_black_24dp));
+```
 ![m2](/images/m3.gif)
 
 Change color

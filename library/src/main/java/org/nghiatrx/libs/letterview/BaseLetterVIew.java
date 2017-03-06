@@ -55,6 +55,9 @@ public abstract class BaseLetterVIew extends View {
 
 
     public BaseLetterVIew setColor(@ColorInt int color) {
+        if (mPaint == null) {
+            mPaint = new Paint(Paint.ANTI_ALIAS_FLAG);
+        }
         mPaint.setColor(color);
         invalidate();
         return this;
@@ -65,7 +68,10 @@ public abstract class BaseLetterVIew extends View {
     }
 
     public BaseLetterVIew setSelectedColor(@ColorInt int selectedColor) {
-        this.mSelectedColor = mSelectedColor;
+        if (mPaintSelected == null) {
+            mPaintSelected = new Paint(Paint.ANTI_ALIAS_FLAG);
+        }
+        this.mSelectedColor = selectedColor;
         mPaintSelected.setColor(selectedColor);
         invalidate();
         return this;
